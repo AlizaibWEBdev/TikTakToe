@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/utlits.css">
+    <title>tik tak toe</title>
+</head>
+<body>
+<div class="warn d-flex flex-center gap-5 go-to-right" id="warn">
+    <p id="message">massage</p>
+    <img src="assets/icons/signal.png">
+</div>
+<div class="go-to-right success d-flex flex-center gap-5" id="successDiv">
+    <p id="successmsg">massage</p>
+    <img src="assets/icons/check.png" width="20px">
+</div>
+<div class="form-wapper flex-center flex-col">
+    <div class=" go-to-left form flex-center flex-col gap-10">
+        <h1>Sign up here</h1>
+        <input type="text" placeholder="name" id="name">
+        <input type="password" placeholder="password" id="pass">
+        <input type="password" placeholder=" confirm password" id="Cpass">
+        <p>have account? <u onclick="showSignUP()"> login here</u></p>
+        <button onclick="signup()">Sign Up</button>
+    </div>
+    <div class=" form flex-center flex-col gap-15">
+        <h1>login here</h1>
+        <input type="text" placeholder="name" id="Loginname">
+        <input type="password" placeholder="password" id="LogiPass">
+        <p>dont have account? <u onclick="showlogin()">signup here</u></p>
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
